@@ -1,0 +1,18 @@
+name: RFC
+description: Propose a new package, a breaking change or a governance change
+labels: ["rfc"]
+body:
+  - type: textarea
+    id: summary
+    attributes: { label: Summary }
+    validations: { required: true }
+  - type: textarea
+    id: motivation
+    attributes: { label: Motivation and use cases }
+    validations: { required: true }
+  - type: textarea
+    id: design
+    attributes: { label: Design, description: API sketch, alternatives considered, compatibility }
+  - type: textarea
+    id: questions
+    attributes: { label: Open questions }

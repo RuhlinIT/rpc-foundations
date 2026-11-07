@@ -1,0 +1,16 @@
+{
+  "name": "@rpc-foundations/request-validation",
+  "version": "0.1.0",
+  "description": "Strict, dependency-free runtime validation for JSON request bodies, with a NestJS pipe.",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "typecheck": "tsc -p tsconfig.lib.json --noEmit && tsc -p tsconfig.spec.json --noEmit",
+    "test": "jest --ci --coverage"
+  },
+  "peerDependencies": { "@nestjs/common": "^11.0.0" },
+  "repository": { "type": "git", "url": "https://github.com/RuhlinIT/rpc-foundations.git", "directory": "packages/request-validation" }
+}

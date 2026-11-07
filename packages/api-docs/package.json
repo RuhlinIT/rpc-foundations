@@ -1,0 +1,16 @@
+{
+  "name": "@rpc-foundations/api-docs",
+  "version": "0.1.0",
+  "description": "Protected, read-only OpenAPI documentation for NestJS without SwaggerModule.setup.",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "typecheck": "tsc -p tsconfig.lib.json --noEmit && tsc -p tsconfig.spec.json --noEmit",
+    "test": "jest --ci --coverage"
+  },
+  "peerDependencies": { "@nestjs/common": "^11.0.0", "@nestjs/core": "^11.0.0", "@nestjs/swagger": "^11.4.2", "swagger-ui-dist": "5.32.4" },
+  "repository": { "type": "git", "url": "https://github.com/RuhlinIT/rpc-foundations.git", "directory": "packages/api-docs" }
+}

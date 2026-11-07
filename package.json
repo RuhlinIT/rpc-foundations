@@ -1,0 +1,28 @@
+{
+  "name": "rpc-foundations",
+  "private": true,
+  "description": "Small, well-tested building blocks for NestJS and TypeScript services.",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.33.2",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "@nestjs/swagger": "^11.4.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "20.19.9",
+    "jest": "^30.0.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "swagger-ui-dist": "5.32.4",
+    "ts-jest": "^29.4.0",
+    "tslib": "^2.3.0",
+    "typescript": "^6.0.3"
+  }
+}

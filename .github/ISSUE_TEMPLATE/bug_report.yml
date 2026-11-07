@@ -1,0 +1,15 @@
+name: Bug report
+description: Something isn't working as documented
+labels: ["bug"]
+body:
+  - type: input
+    id: package
+    attributes: { label: Package and version, placeholder: "@rpc-foundations/request-validation 0.1.0" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: Steps to reproduce, expected and actual behavior }
+    validations: { required: true }
+  - type: input
+    id: env
+    attributes: { label: Environment, placeholder: "Node 22, NestJS 11, OS" }
